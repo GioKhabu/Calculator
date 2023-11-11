@@ -7,10 +7,19 @@ import { ThemeColorContext } from '../App/App';
 
 function ThemeControler() {
 const { theme, setTheme } = React.useContext(ThemeColorContext);
-const [volume, setVolume] = React.useState(1)
+const [volume, setVolume] = React.useState(()=>{
+  const savedValue = window.localStorage.getItem('color-theme');
+  if(savedValue){
+    return savedValue
+  } else {
+    return 1
+  }
+})
 
 React.useEffect(()=>{
   const volumeN = Number(volume);
+
+  window.localStorage.setItem('color-theme', volume);
 
  if (volumeN === 1) {
    setTheme(Theme1);

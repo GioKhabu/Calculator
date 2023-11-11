@@ -1,4 +1,23 @@
-export const keyboardKeys = [{seven:7},{eight:8},{nine:9},{delete:"DEL"},{four:4},{five:5},{six:6},{plus:"+"},{one:1},{two:2},{three:3},{minus:"-"},{dot:"."},{zero:0},{divide:"/"},{multiply:"x"},{reset:"RESET"},{equals:"="}]
+export const keyboardKeys = [
+  { seven: 7 },
+  { eight: 8 },
+  { nine: 9 },
+  { delete: 'DEL' },
+  { four: 4 },
+  { five: 5 },
+  { six: 6 },
+  { plus: '+' },
+  { one: 1 },
+  { two: 2 },
+  { three: 3 },
+  { minus: '-' },
+  { dot: '.' },
+  { zero: 0 },
+  { divide: '/' },
+  { multiply: 'x' },
+  { reset: 'RESET' },
+  { equals: '=' },
+];
 
 export const Theme1 = {
   mainBackground: 'hsl(222deg 26% 31%)',
@@ -45,7 +64,6 @@ export const Theme3 = {
   equalKeyBackgroundShadow: 'hsl(177, 92%, 70%)',
   secondaryKeyBackground: 'hsl(268, 47%, 21%)',
   secondaryKeyBackShadow: 'hsl(290, 70%, 36%)',
-
 
   headPanelText: 'hsl(52deg 100% 62%)',
   keyBoardText: 'hsl(52deg 100% 62%)',
