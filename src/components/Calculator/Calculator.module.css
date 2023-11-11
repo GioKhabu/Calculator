@@ -1,0 +1,14 @@
+.calculator {
+  min-width: 540px;
+  max-width: 540px;
+
+  height: 708px;
+  margin: 96px 24px 31px 24px;
+}
+
+@media (max-width: 640px) {
+  .calculator {
+    max-width: 540px;
+    min-width: 327px;
+  }
+}

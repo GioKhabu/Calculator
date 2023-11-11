@@ -1,0 +1,79 @@
+.keyGroup {
+  background-color: #ffff;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 64px;
+  font-family: 'League Spartan';
+  font-weight: bold;
+  font-size: 34px;
+  border-radius: 12px;
+  grid-column: auto;
+}
+
+.keysWrapper {
+  max-width: 101px;
+  min-width: 60px;
+  height: 100%;
+  background-color: var(--color-secondaryKeyBackground);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-keyBoardText);
+  box-shadow: inset 0px -4px 0px 0 var(--color-secondaryKeyBackShadow);
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .keysWrapper {
+    font-size: 24px;
+  }
+}
+
+.keysWrapper:hover {
+  opacity: 0.5;
+}
+
+.key1equals {
+  grid-column: span 2;
+  color: var(--color-equalText);
+}
+.key1reset {
+  color: var(--color-primaryText);
+  grid-column: span 2;
+}
+
+.keyequals {
+  max-width: 227px;
+  min-width: 133px;
+  background-color: var(--color-equalKeyBackground);
+  color: var(--color-equalText);
+  box-shadow: inset 0px -4px 0px 0 var(--color-equalKeyBackgroundShadow);
+}
+
+.keyGroup > .keyequals:hover {
+  opacity: 0.7;
+}
+
+.keyreset {
+  max-width: 227px;
+  min-width: 133px;
+  background-color: var(--color-keyBackground);
+  color: var(--color-primaryText);
+  box-shadow: inset 0px -4px 0px 0 var(--color-keyShadow);
+}
+
+.keyreset:hover {
+  opacity: 0.7;
+}
+
+.keydelete {
+  background-color: var(--color-keyBackground);
+  color: var(--color-primaryText);
+  box-shadow: inset 0px -4px 0px 0 var(--color-keyShadow);
+}
+
+.keydelete:hover {
+  opacity: 0.7;
+}

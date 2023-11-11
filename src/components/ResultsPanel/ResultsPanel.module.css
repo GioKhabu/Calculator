@@ -1,0 +1,28 @@
+.panelWrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--color-screenBackground);
+  margin-top: 32px;
+  max-width: 100%;
+  height: 128px;
+  border-radius: 10px;
+}
+
+.panelWrapper h2 {
+  font-family: 'League Spartan';
+  margin-right: 32px;
+  font-size: 56px;
+  font-weight: bold;
+  color: var(--color-headPanelText);
+}
+
+
+@media (max-width: 640px) {
+  .panelWrapper {
+    height: 88px;
+  }
+  .panelWrapper h2 {
+  font-size: 40px;
+}
+}
