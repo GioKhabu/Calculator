@@ -53,6 +53,10 @@
   border-radius: 25px;
 }
 
+.themeRange::-webkit-slider-thumb:hover {
+  filter: brightness(130%);
+}
+
 .themeWrapper span {
   display: flex;
   justify-content: space-between;
