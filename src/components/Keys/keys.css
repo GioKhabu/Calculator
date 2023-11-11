@@ -5,8 +5,8 @@
   width: auto;
   height: 64px;
   font-family: 'League Spartan';
-  font-weight: bold;
-  font-size: 34px;
+  font-weight: 700;
+  font-size: 32px;
   border-radius: 12px;
   grid-column: auto;
 }
@@ -23,12 +23,6 @@
   color: var(--color-keyBoardText);
   box-shadow: inset 0px -4px 0px 0 var(--color-secondaryKeyBackShadow);
   cursor: pointer;
-}
-
-@media (max-width: 640px) {
-  .keysWrapper {
-    font-size: 24px;
-  }
 }
 
 .keysWrapper:hover {
@@ -62,6 +56,8 @@
   background-color: var(--color-keyBackground);
   color: var(--color-primaryText);
   box-shadow: inset 0px -4px 0px 0 var(--color-keyShadow);
+  letter-spacing: 0.33px;
+  font-size: 28px;
 }
 
 .keyreset:hover {
@@ -72,8 +68,23 @@
   background-color: var(--color-keyBackground);
   color: var(--color-primaryText);
   box-shadow: inset 0px -4px 0px 0 var(--color-keyShadow);
+  letter-spacing: 0.33px;
+  font-size: 28px;
 }
 
 .keydelete:hover {
   opacity: 0.7;
+}
+
+@media (max-width: 640px) {
+  .keysWrapper {
+    font-size: 22px;
+  }
+  .keyreset {
+    font-size: 18px;
+  }
+
+  .keydelete {
+    font-size: 18px;
+  }
 }
