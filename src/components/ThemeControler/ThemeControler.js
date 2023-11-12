@@ -6,7 +6,7 @@ import { Theme1, Theme2, Theme3 } from '../../utils';
 import { ThemeColorContext } from '../App/App';
 
 function ThemeControler() {
-const { theme, setTheme } = React.useContext(ThemeColorContext);
+const { setTheme } = React.useContext(ThemeColorContext);
 const [volume, setVolume] = React.useState(()=>{
   const savedValue = window.localStorage.getItem('color-theme');
   if(savedValue){
