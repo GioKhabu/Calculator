@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './App.module.css';
 import '../Calculator';
 import Calculator from '../Calculator';
-import { Theme1, Theme2, Theme3 } from '../../utils';
+import { Theme1} from '../../utils';
 import { CalculatorMathContext } from '../../contexts/CalculatorMathContext';
 
 export const ThemeColorContext = React.createContext();
