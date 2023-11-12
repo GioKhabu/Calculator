@@ -35,13 +35,9 @@ Users should be able to:
 
 ![](./public/images/Main_mobile.JPG)
 
-
-
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/GioKhabu/Calculator/tree/master](https://your-solution-url.com)
 
 ## My process
 
@@ -54,11 +50,7 @@ Users should be able to:
 - Desctop-first workflow
 - [React](https://reactjs.org/) - JS library
 
-
 ## Author
 
 - Website - [Giorgi Khavburzania](https://github.com/GioKhabu)
 - Frontend Mentor - [@GioKhabu](https://www.frontendmentor.io/profile/GioKhabu)
-
-
-
