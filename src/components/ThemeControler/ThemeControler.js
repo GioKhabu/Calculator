@@ -19,6 +19,8 @@ const [volume, setVolume] = React.useState(()=>{
 React.useEffect(()=>{
   const volumeN = Number(volume);
 
+  
+
   window.localStorage.setItem('color-theme', volume);
 
  if (volumeN === 1) {
