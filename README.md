@@ -37,7 +37,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/GioKhabu/Calculator/tree/master](https://your-solution-url.com)
+- Solution URL: [https://github.com/GioKhabu/Calculator.git](https://github.com/GioKhabu/Calculator.git)
+- Live Site URL: [https://giokhabu.github.io/Calculator/](https://giokhabu.github.io/Calculator/)
+
 
 ## My process
 
