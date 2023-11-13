@@ -7,22 +7,46 @@
   max-width: 100%;
   height: 128px;
   border-radius: 10px;
+  overflow: auto;
+   
+}
+
+.panelWrapper::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 5px;
+
+}
+
+.panelWrapper::-webkit-scrollbar-track {
+  background: var(--color-keyBackground);
+  border-radius: 10px;
+}
+
+.panelWrapper::-webkit-scrollbar-thumb {
+  background-color: var(--color-headPanelText);
+  border-radius: 20px;
+  border: 3px solid var(--color-keyBackground);
 }
 
 .panelWrapper h2 {
+  display: inline;
+  margin-left: auto;
+  overflow-wrap:break-word;
+  text-align: right;
+  width: 92%;
   font-family: 'League Spartan';
+  margin: 0;
   margin-right: 32px;
   font-size: 56px;
   font-weight: 700;
   color: var(--color-headPanelText);
 }
 
-
 @media (max-width: 640px) {
   .panelWrapper {
     height: 88px;
   }
   .panelWrapper h2 {
-  font-size: 40px;
-}
+    font-size: 40px;
+  }
 }

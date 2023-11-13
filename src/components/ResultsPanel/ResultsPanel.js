@@ -6,7 +6,7 @@ function ResultsPanel() {
   const { currentNum, nextNum, mathOperator } = React.useContext(CalculatorContext);
   return (
     <div className={`${styles.panelWrapper}`}>
-      <h2>{`${currentNum}${mathOperator}${nextNum}`}</h2>
+      <h2 >{`${currentNum}${mathOperator}${nextNum}`}</h2>
     </div>
   );
 }
