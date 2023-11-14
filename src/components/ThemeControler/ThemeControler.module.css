@@ -16,7 +16,7 @@
 
 .themeLabel {
   align-self: flex-end;
-  margin: 0 26px 5px;
+  margin: 0 24px 7px;
   font-size: 12px;
   letter-spacing: 1px;
 }
@@ -26,11 +26,11 @@
   outline: none;
   appearance: none;
   height: 26px;
-  width: 71px;
+  width: 61px;
   background-color: #242d44;
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  padding: 0 2px;
+  padding: 0 5px;
   margin: 0;
   cursor: pointer;
 }
