@@ -3,10 +3,10 @@ import styles from  './ResultsPanel.module.css'
 import { CalculatorContext } from '../../contexts/CalculatorMathContext';
 
 function ResultsPanel() {
-  const { currentNum, nextNum, mathOperator } = React.useContext(CalculatorContext);
+  const { currentNum, nextNum, mathOperator, result } = React.useContext(CalculatorContext);
   return (
     <div className={`${styles.panelWrapper}`}>
-      <h2 >{`${currentNum}${mathOperator}${nextNum}`}</h2>
+      <h2 >{`${result}${currentNum}${mathOperator}${nextNum}`}</h2>
     </div>
   );
 }

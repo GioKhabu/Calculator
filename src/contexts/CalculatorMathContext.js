@@ -6,6 +6,7 @@ function CalculatorMathContext({ children }) {
   const [currentNum, setCurrentNum] = React.useState('');
   const [nextNum, setNextNum] = React.useState('');
   const [initial, setInitial] = React.useState(true);
+  const [result, setResult] = React.useState('')
   const [mathOperator, setmathOperator] = React.useState('');
 
   const value = {
@@ -17,6 +18,8 @@ function CalculatorMathContext({ children }) {
     setInitial,
     mathOperator,
     setmathOperator,
+    result,
+    setResult,
   };
 
   return <CalculatorContext.Provider value={value}>{children}</CalculatorContext.Provider>;

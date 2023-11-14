@@ -12,8 +12,10 @@ function Keys({ value, name }) {
     setInitial,
     mathOperator,
     setmathOperator,
+    result,
+    setResult,
   } = React.useContext(CalculatorContext);
-
+// console.log(value)
   return (
     <div className={`keyGroup key1${name}`}>
       <span
@@ -34,6 +36,8 @@ function Keys({ value, name }) {
               (value === '.') & !currentNum.includes('.') & (currentNum.length !== 0))
           ) {
             setCurrentNum(String(currentNum) + String(value));
+            setResult('');
+            setmathOperator('');
           } else if (
             (initial === false) &
             (value === 1 ||
@@ -46,63 +50,101 @@ function Keys({ value, name }) {
               value === 8 ||
               value === 9 ||
               value === 0 ||
-              (value === '.') & !currentNum.includes('.') & (currentNum.length !== 0))
+              (value === '.') & !nextNum.includes('.') & (nextNum.length !== 0))
           ) {
             setNextNum(String(nextNum) + String(value));
           } else if (value === '+') {
             if (mathOperator !== '+') {
-              setmathOperator('+');
-              setInitial(false);
+              if (result.length > 0) {
+                setCurrentNum(result);
+                setResult('');
+                setmathOperator('+');
+                setInitial(false);
+              } else {
+                setmathOperator('+');
+                setInitial(false);
+              }
             } else if (mathOperator === '+' && nextNum.length !== 0) {
               setCurrentNum(String(Number(currentNum) + Number(nextNum)));
               setNextNum('');
             }
           } else if (value === '-') {
             if (mathOperator !== '-') {
-              setmathOperator('-');
-              setInitial(false);
+              if (result.length > 0) {
+                setCurrentNum(result);
+                setResult('');
+                setmathOperator('-');
+                setInitial(false);
+              } else {
+                setmathOperator('-');
+                setInitial(false);
+              }
             } else if (mathOperator === '-' && nextNum.length !== 0) {
               setCurrentNum(String(Number(currentNum) - Number(nextNum)));
               setNextNum('');
             }
           } else if (value === 'x') {
             if (mathOperator !== 'x') {
-              setmathOperator('x');
-              setInitial(false);
+              if (result.length > 0) {
+                setCurrentNum(result);
+                setResult('');
+                setmathOperator('x');
+                setInitial(false);
+              } else {
+                setmathOperator('x');
+                setInitial(false);
+              }
             } else if (mathOperator === 'x' && nextNum.length !== 0) {
               setCurrentNum(String(Number(currentNum) * Number(nextNum)));
               setNextNum('');
             }
           } else if (value === '/') {
             if (mathOperator !== '/') {
-              setmathOperator('/');
-              setInitial(false);
+              if (result.length > 0) {
+                setCurrentNum(result);
+                setResult('');
+                setmathOperator('/');
+                setInitial(false);
+              } else {
+                setmathOperator('/');
+                setInitial(false);
+              }
             } else if (mathOperator === '/' && nextNum.length !== 0) {
               setCurrentNum(String(Number(currentNum) / Number(nextNum)));
               setNextNum('');
             }
           } else if (value === 'RESET') {
             setCurrentNum('');
+            setResult('');
             setNextNum('');
             setInitial(true);
+            setmathOperator('');
           } else if (value === '=') {
             if (mathOperator === '+') {
               setCurrentNum(String(Number(currentNum) + Number(nextNum)));
+              setResult(String(Number(currentNum) + Number(nextNum)));
+              setCurrentNum('');
               setInitial(true);
               setNextNum('');
               setmathOperator('');
             } else if (mathOperator === '-') {
               setCurrentNum(String(Number(currentNum) - Number(nextNum)));
+              setResult(String(Number(currentNum) - Number(nextNum)));
+              setCurrentNum('');
               setInitial(true);
               setNextNum('');
               setmathOperator('');
             } else if (mathOperator === 'x') {
               setCurrentNum(String(Number(currentNum) * Number(nextNum)));
+              setResult(String(Number(currentNum) * Number(nextNum)));
+              setCurrentNum('');
               setInitial(true);
               setNextNum('');
               setmathOperator('');
             } else if (mathOperator === '/') {
               setCurrentNum(String(Number(currentNum) / Number(nextNum)));
+              setResult(String(Number(currentNum) / Number(nextNum)));
+              setCurrentNum('');
               setInitial(true);
               setNextNum('');
               setmathOperator('');

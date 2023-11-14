@@ -6,11 +6,11 @@ import styles from './Calculator.module.css';
 
 function Calculator() {
   return (
-    <div className={`${styles.calculator}`}>
+    <main className={`${styles.calculator}`}>
       <Header />
       <ResultsPanel />
       <Keyboard />
-    </div>
+    </main>
   );
 }
 
