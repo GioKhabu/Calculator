@@ -15,7 +15,6 @@ function Keys({ value, name }) {
     result,
     setResult,
   } = React.useContext(CalculatorContext);
-// console.log(value)
   return (
     <div className={`keyGroup key1${name}`}>
       <span

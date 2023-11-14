@@ -41,9 +41,9 @@ React.useEffect(()=>{
         </label>
         <div className={`${styles.sliderWrapper}`}>
           <span>
-            <h3>1</h3>
-            <h3>2</h3>
-            <h3>3</h3>
+            <h2>1</h2>
+            <h2>2</h2>
+            <h2>3</h2>
           </span>
           <input
             type="range"
